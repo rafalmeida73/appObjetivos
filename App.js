@@ -25,7 +25,7 @@ export default function App() {
 
   return (
     <View style={styles.screen}>
-      <Button title="Add novo objetivo" onPress={() => setIsAddMode(true)} />
+      <Button title="Adicionar novo objetivo" onPress={() => setIsAddMode(true)} color="black"/>
       <GoalInput visible={isAddMode} onAddGoal={addGoalHandler} onCancel={cancelGaolAdditionHandler} />
       <FlatList
         keyExtractor={(item, index) => item.id}
@@ -42,7 +42,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   screen: {
-    padding: 50
+    padding: 50,
   },
   inputContainer: {
     flexDirection: 'row',
